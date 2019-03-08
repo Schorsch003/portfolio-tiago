@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tiago Coelho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    <header class="cabecalho">
+            <img src="img/playboy_b.png" alt="">    
+        <nav>
+            <div class="navegacao flex ">
+                <ul>
+                    <li>
+                        <a href="#skills">Skills</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#sobre">Curiosidades</a>
+                        <a href="#rs">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <span class="btn_menu">M</span>
+    </header>
+    <main>
+
+        <section id="banner" class="container flex">
+            <h2>SOLA</h2>
+        </section>
+        <section class="sobre_trabalhos" id="sobre">
+            <div id="titulo" class="flex">
+                <h2>SAIBA MAIS</h2>
+                <h2>DE TIAGO</h2>
+            </div>
+            <div id="imgs" class="flex">
+                <img id="oogway" class="redondo" src="img/oogway_icon.png" alt="oogway">
+                <img id="perfil" src="img/perfil.jpeg" class="redondo" alt="">
+                <img id="oogway" class="redondo" src="img/oogway_icon.png" alt="oogway">
+            </div>
+            <p>Sobre os trabalhos</p>
+        </section>
+
+        <section class="historia">
+            <h2>| História</h2>
+            <div id="hist1" class="flex">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque eveniet similique
+                    accusamus
+                    aut? At sapiente voluptatem eum corrupti laborum, saepe, quas iste quam ut, corporis quisquam
+                    delectus
+                    hic non.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus expedita laborum
+                    suscipit illo ipsam error unde, quaerat, maiores animi inventore vel quos minus nisi eveniet, vero
+                    veritatis possimus veniam.</p>
+                <img src="img/imagem-historia.jpg" alt="">
+            </div>
+            <div id="hist2" class="flex">
+                <img src="img/tiagao_no_pc.jpeg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque neque eveniet similique
+                    accusamus
+                    aut? At sapiente voluptatem eum corrupti laborum, saepe, quas iste quam ut, corporis quisquam
+                    delectus
+                    hic non.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus expedita laborum
+                    suscipit illo ipsam error unde, quaerat, maiores animi inventore vel quos minus nisi eveniet, vero
+                    veritatis possimus veniam.</p>
+
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>| Skills</h2>
+            <div id="skill_box" class="flex">
+                <article id="skill" class="box_skills">
+                    <h3>Skills</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dolorum expedita provident
+                        recusandae corporis? Veritatis voluptas explicabo, natus quod vitae consequuntur sequi beatae
+                        fugit repellendus commodi, magni, perferendis quas laboriosam.</p>
+                </article>
+                <article id="personalidade" class="box_skills">
+                    <h3>Personalidade</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dolorum expedita provident
+                        recusandae corporis? Veritatis voluptas explicabo, natus quod vitae consequuntur sequi beatae
+                        fugit repellendus commodi, magni, perferendis quas laboriosam.</p>
+                </article>
+                <article id="pontos_fortes" class="box_skills">
+                    <h3>Pontos Fortes</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dolorum expedita provident
+                        recusandae corporis? Veritatis voluptas explicabo, natus quod vitae consequuntur sequi beatae
+                        fugit repellendus commodi, magni, perferendis quas laboriosam.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h2>| Projetos</h2>
+            <div id="proj_group">
+                <div id="box_1" class="proj_box">
+                </div>
+                <div id="box_2" class="proj_box">
+                </div>
+                <div id="box_3" class="proj_box">
+                </div>
+                <div id="box_4" class="proj_box">
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <h2>| Informações</h2>
+            <div id="info_flex">
+                <form id="forms" method="POST ">
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                    <br>
+                    <input type="tel" name="numero" id="numero" placeholder="Número de telefone">
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <br>
+                    <input type="submit" value="enviar" id="enviar">
+                    <br>
+                </form>
+                <input type="text" name="comment" id="comment" placeholder="Escreva sua mensagem aqui!">
+            </div>
+            <section class="redes_sociais" id="rs">
+                <h2>| Redes sociais</h2>
+                <div id="social_tab">
+                    <a href="http://www.facebook.com" class="social_box" id="face"></a>
+                    <a href="http://twitter.com" class="social_box" id="twitter"></a>
+                    <a href="http://instagram.com" class="social_box" id="insta"></a>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="rodape">
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var menu = $(".navegacao");
+            var botao = $(".btn_menu");
+
+            botao.on("click", function () {
+                menu.toggleClass("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
